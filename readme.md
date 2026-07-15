@@ -1,22 +1,38 @@
-Student Hub Portal
+# StudentHub
 
- Pages
+## Description
 
- 1. Home 
- 2. Login
- 3. Sign Up
- 4. About Us
- 5. Contact
- 6. Dashboard
- 7. Profile
- 8. Student
- 9. Attendance
- 10. Time Table
- 11. Study Material
- 12. Result
- 13. Log Out
+StudentHub is a web-based student portal developed as a semester project for the Web Development Framework subject.
 
- Users
+## Features
 
- student
- admin
+- Student Login
+- Dashboard
+- Attendance
+- Assignments
+- Courses
+- Study Materials
+- Timetable
+- Results
+- Notices
+- Student Profile
+
+## Technologies
+
+- HTML
+- CSS
+- Git
+- GitHub
+
+## Folder Structure
+
+StudentHub/
+├── css/
+├── images/
+├── assets/
+├── index.html
+└── README.md
+
+## Developed By
+
+Vishva Fultariya
