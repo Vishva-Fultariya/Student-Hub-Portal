@@ -21,17 +21,7 @@ StudentHub is a web-based student portal developed as a semester project for the
 
 - HTML
 - CSS
-- Git
 - GitHub
-
-## Folder Structure
-
-StudentHub/
-├── css/
-├── images/
-├── assets/
-├── index.html
-└── README.md
 
 ## Developed By
 
