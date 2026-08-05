@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Login - StudentHub Portal">
+    <meta name="author" content="Vishva">
+    <title>Login | StudentHub Portal</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="StudentHub Portal Logo" width="80">
+        <h1>StudentHub Portal</h1>
+        <p><strong>Empowering Students Through Technology</strong></p>
+    </header>
+    <nav aria-label="Primary Navigation">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Sign Up</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Student Login</h2>
+            <p>
+                Enter your enrollment number and password to access your
+                StudentHub account.
+            </p>
+        </section>
+        <hr>
+        <section>
+            <form action="dashboard.html">
+                <label for="enrollment">
+                    Enrollment Number
+                </label>
+                <br>
+                <input
+                    type="text"
+                    id="enrollment"
+                    name="enrollment"
+                    placeholder="Enter Enrollment Number"
+                    required>
+                <br><br>
+                <label for="password">
+                    Password
+                </label>
+                <br>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password"
+                    required>
+                <p> <a href="#">Forgot Password?</a> </p>
+                <input type="submit" value="Login">
+                <a href="index.html">
+                    <button type="button">Cancel</button>
+                </a>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h3>Need an Account?</h3>
+            <p>
+                New student?
+                <a href="signup.html">Create an Account</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            © 2026 StudentHub Portal |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms &amp; Conditions</a>
+        </p>
+    </footer>
+</body>
+</html>

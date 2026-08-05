@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration - StudentHub Portal">
+    <meta name="author" content="Vishva">
+    <title>Sign Up | StudentHub Portal</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="StudentHub Portal Logo" width="80">
+        <h1>StudentHub Portal</h1>
+        <p><strong>Empowering Students Through Technology</strong></p>
+    </header>
+    <nav aria-label="Primary Navigation">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Sign Up</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Student Registration</h2>
+            <p> Create your StudentHub account by filling in the required information. </p>
+        </section>
+        <hr>
+        <section>
+            <form action="dashboard.html">
+                <label for="fullname">Full Name</label><br>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter Full Name"
+                    required>
+                <br><br>
+                <label for="enrollment">Enrollment Number</label><br>
+                <input
+                    type="text"
+                    id="enrollment"
+                    name="enrollment"
+                    placeholder="Enter Enrollment Number"
+                    required>
+                <br><br>
+                <label for="email">Email Address</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email Address"
+                    required>
+                <br><br>
+                <label for="mobile">Mobile Number</label><br>
+                <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="Enter Mobile Number"
+                    required>
+                <br><br>
+                <label for="department">Department</label><br>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>CE</option>
+                    <option>EC</option>
+                    <option>ME</option>
+                </select>
+                <br><br>
+                <label for="semester">Semester</label><br>
+                <select id="semester" name="semester" required>
+                    <option value="">Select Semester</option>
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                    <option>Semester 6</option>
+                    <option>Semester 7</option>
+                    <option>Semester 8</option>
+                </select>
+                <br><br>
+                <label for="password">Create Password</label><br>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create Password"
+                    required>
+                <br><br>
+                <label for="confirm-password">Confirm Password</label><br>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    placeholder="Confirm Password"
+                    required>
+                <br><br>
+                <input type="submit" value="Register">
+                <a href="index.html">
+                    <button type="button">Cancel</button>
+                </a>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h3>Already Have an Account?</h3>
+            <p> <a href="login.html">Login Here</a> </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            © 2026 StudentHub Portal |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms &amp; Conditions</a>
+        </p>
+    </footer>
+</body>
+</html>
