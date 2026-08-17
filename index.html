@@ -1,90 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StudentHub Portal">
-    <meta name="author" content="Vishva">
-    <title>Home | StudentHub Portal</title>
-</head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="StudentHub Portal Logo" width="80">
-        <h1>StudentHub Portal</h1>
-        <p><strong>Empowering Students Through Technology</strong></p>
-    </header>
-    <nav aria-label="Primary Navigation">
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="login.html">Login</a> |
-        <a href="signup.html">Sign Up</a>
-    </nav>
-    <main>
-        <section>
-            <h2>Welcome to StudentHub Portal</h2>
-            <p>
-                StudentHub Portal is a centralized platform designed to help students
-                access study materials, class schedules, attendance, results,
-                and important academic notices from one place.
-            </p>
-            <img src="images/home-banner.png" alt="Students using StudentHub Portal" width="500">
-            <br><br>
-            <a href="signup.html">Get Started</a>
-            &nbsp;&nbsp;
-            <a href="about.html">Learn More</a>
-        </section>
-        <hr>
-        <section>
-            <h2>Why Choose StudentHub?</h2>
-            <article>
-                <h3>Secure Portal</h3>
-                <p>Safe and secure access to academic information.</p>
-            </article>
-            <article>
-                <h3>Easy Access</h3>
-                <p>Quickly access attendance, timetable, results and notices.</p>
-            </article>
-            <article>
-                <h3>Student-Centered Services</h3>
-                <p>All important student services are available in one place.</p>
-            </article>
-        </section>
-        <hr>
-        <section>
-            <h2>Portal Features</h2>
-            <article>
-                <h3>Study Material</h3>
-                <p>Access learning resources anytime.</p>
-            </article>
-            <article>
-                <h3>Timetable</h3>
-                <p>View weekly class schedule.</p>
-            </article>
-            <article>
-                <h3>Attendance</h3>
-                <p>Track attendance records.</p>
-            </article>
-            <article>
-                <h3>Result</h3>
-                <p>Check semester performance.</p>
-            </article>
-            <article>
-                <h3>Notice Board</h3>
-                <p>Read the latest announcements.</p>
-            </article>
-            <article>
-                <h3>Profile</h3>
-                <p>Manage your personal information.</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>
-            © 2026 StudentHub Portal |
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Terms &amp; Conditions</a>
-        </p>
-    </footer>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="StudentHub Portal" name="description"/>
+  <meta content="Vishva" name="author"/>
+  <title>
+   Home | StudentHub Portal
+  </title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Tailwind -->
+  <script>
+    tailwind.config = {
+        corePlugins: {
+            preflight: false
+        }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- StudentHub CSS -->
+    <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Header -->
+  <header>
+   <!-- Image -->
+   <img alt="StudentHub Portal Logo" src="images/logo.png" width="80"/>
+   <h1>
+    StudentHub Portal
+   </h1>
+   <p>
+    <strong>
+     Empowering Students Through Technology
+    </strong>
+   </p>
+  </header>
+  <!-- Navigation -->
+  <nav aria-label="Primary Navigation" class="public-nav">
+   <a href="index.html">
+    Home
+   </a>
+   <a href="about.html">
+    About Us
+   </a>
+   <a href="contact.html">
+    Contact
+   </a>
+   <a href="login.html">
+    Login
+   </a>
+   <a href="signup.html">
+    Sign Up
+   </a>
+  </nav>
+  <!-- Main -->
+  <main>
+   <section class="public-section hero">
+    <div class="hero-content">
+     <h2>Welcome to StudentHub Portal</h2>
+     <p>StudentHub Portal is a centralized platform designed to help students access study materials, class schedules, attendance, results, and important academic notices from one place.</p>
+     <div class="button-row">
+      <a class="button" href="signup.html">Get Started</a>
+      <a class="button secondary" href="about.html">Learn More</a>
+     </div>
+    </div>
+    <div class="hero-visual">
+     <img alt="Students using digital learning tools" class="hero-image" src="images/home-banner.png" width="700" height="450"/>
+    </div>
+   </section>
+   <section>
+    <h2>
+     Why Choose StudentHub?
+    </h2>
+    <div class="card-grid">
+     <article class="card">
+      <h3>
+       Secure Portal
+      </h3>
+      <p>
+       Safe and secure access to academic information.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       Easy Access
+      </h3>
+      <p>
+       Quickly access attendance, timetable, results and notices.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       Student-Centered Services
+      </h3>
+      <p>
+       All important student services are available in one place.
+      </p>
+     </article>
+    </div>
+   </section>
+   <section>
+    <h2>
+     Portal Features
+    </h2>
+    <div class="card-grid">
+     <article class="card">
+      <h3>
+       Study Material
+      </h3>
+      <p>
+       Access learning resources anytime.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       Timetable
+      </h3>
+      <p>
+       View weekly class schedule.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       Attendance
+      </h3>
+      <p>
+       Track attendance records.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       Result
+      </h3>
+      <p>
+       Check semester performance.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       Notice Board
+      </h3>
+      <p>
+       Read the latest announcements.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       Profile
+      </h3>
+      <p>
+       Manage your personal information.
+      </p>
+     </article>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+   <p>
+    © 2026 StudentHub Portal |
+    <a href="index.html#privacy">
+     Privacy Policy
+    </a>
+    |
+    <a href="index.html#terms">
+     Terms &amp; Conditions
+    </a>
+   </p>
+  </footer>
+ </body>
 </html>

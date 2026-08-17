@@ -1,179 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Student Time Table">
-    <title>Time Table | StudentHub Portal</title>
-</head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="StudentHub Portal Logo" width="80">
-        <h1>StudentHub Portal</h1>
-    </header>
-    <nav aria-label="Student Navigation">
-        <p><strong>Welcome, Vishva</strong></p>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Student Time Table" name="description"/>
+  <meta content="Vishva" name="author"/>
+  
+  <title>
+   Time Table | StudentHub Portal
+  </title>
+ 
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Tailwind -->
+  <script>
+    tailwind.config = {
+        corePlugins: {
+            preflight: false
+        }
+    };
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- StudentHub CSS -->
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Header -->
+  <header>
+   <!-- Image -->
+   <img alt="StudentHub Portal Logo" src="images/logo.png" width="80"/>
+   <h1>
+    StudentHub Portal
+   </h1>
+   <p>
+    <strong>
+     Empowering Students Through Technology
+    </strong>
+   </p>
+  </header>
+  <!-- Navigation -->
+  <nav aria-label="Student Navigation" class="portal-welcome">
+   <p>
+    <strong>
+     Welcome, Vishva
+    </strong>
+   </p>
+  </nav>
+  <!-- Main -->
+  <main class="portal-layout">
+   <!-- Sidebar -->
+   <aside class="sidebar">
+    <h2>Menu</h2>
+    <nav aria-label="Sidebar Navigation">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li class="student-menu">
+                <!-- Dropdown -->
+                <details>
+                    <summary>Student</summary>
+                    <ul class="student-submenu">
+                        <li><a href="studymaterial.html">Study Material</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="attendance.html">Attendance</a></li>
+                        <li><a href="result.html">Result</a></li>
+                        <li><a href="notice.html">Notice Board</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
     </nav>
-    <main>
-        <aside>
-            <h2>Menu</h2>
-            <nav aria-label="Sidebar Navigation">
-                <ul>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="student.html">Student</a></li>
-                    <li><a href="logout.html">Logout</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <section>
-            <h2>Weekly Time Table</h2>
-            <p>
-                Academic Year : <strong>2026-27</strong> |
-                Semester : <strong>3</strong> |
-                Division : <strong>I</strong>
-            </p>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>9:10<br>10:10</th>
-                        <th>10:10<br>11:10</th>
-                        <th>11:10<br>12:10</th>
-                        <th>12:10<br>1:10</th>
-                        <th>1:10<br>2:10</th>
-                        <th>2:10<br>2:20</th>
-                        <th>2:20<br>3:20</th>
-                        <th>3:20<br>4:20</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Monday</strong></td>
-                        <td> CSUC201 <br> FDSA </td>
-                        <td> ITUC201 <br> FCN </td>
-                        <td rowspan="6" align="center">
-                            L <br> U <br> N <br> C <br> H <br><br> B <br> R <br> E <br> A <br> K
-                        </td>
-                        <td colspan="2" align="center">
-                            HSUV201 <br> HS
-                        </td>
-                        <td rowspan="6" align="center">
-                            S <br> H <br> O <br> R <br> T <br><br> B <br> R <br> E <br> A <br> K
-                        </td>
-                        <td colspan="2" align="center">
-                            Laboratory Session
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tuesday</strong></td>
-                        <td> MSUD203 <br> Maths </td>
-                        <td> CSUC201 <br> FDSA </td>
-                        <td colspan="2" align="center">
-                            Laboratory Session
-                        </td>
-                        <td> ITUC201 <br> FCN </td>
-                        <td> ITUE204 <br> WDF </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Wednesday</strong></td>
-                        <td> MSUD203 <br> Maths </td>
-                        <td> CEUE203 <br> OOP </td>
-                        <td colspan="2" align="center">
-                            Laboratory Session
-                        </td>
-                        <td> ITUE204 <br> WDF </td>
-                        <td> CSUC201 <br> FDSA </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Thursday</strong></td>
-                        <td> ITUE204 <br> WDF </td>
-                        <td> ITUC201 <br> FCN </td>
-                        <td colspan="2" align="center">
-                            Laboratory Session
-                        </td>
-                        <td colspan="2" align="center">
-                            Laboratory Session
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Friday</strong></td>
-                        <td> MSUD203 <br> Maths </td>
-                        <td> CSUC201 <br> FDSA </td>
-                        <td colspan="2" align="center">
-                            Counselling Session
-                        </td>
-                        <td> ITUC201 <br> FCN </td>
-                        <td> CEUE203 <br> OOP </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Saturday</strong></td>
-                        <td align="center">-</td>
-                        <td align="center">-</td>
-                        <td colspan="2" align="center">-</td>
-                        <td align="center">-</td>
-                        <td align="center">-</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <h2>Course Information</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Course Code</th>
-                        <th>Course Name (Short Name)</th>
-                        <th>Course Name</th>
-                        <th>Name of Faculty Member(s)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CSUC201</td>
-                        <td>FDSA</td>
-                        <td>Fundamentals of Data Structure and Algorithm</td>
-                        <td> Prof. Avani Khokhariya<br> Prof. Gayatri Parbat<br> Prof. Vidisha Pradhan </td>
-                    </tr>
-                    <tr>
-                        <td>ITUC201</td>
-                        <td>FCN</td>
-                        <td>Fundamentals of Computer Networks</td>
-                        <td> Prof. Harshul Yagnik<br> Prof. Brinda Patel<br> Prof. Akshita Kadam </td>
-                    </tr>
-                    <tr>
-                        <td>ITUE204</td>
-                        <td>WDF</td>
-                        <td>Web Development Frameworks</td>
-                        <td> Prof. Vaibhavi Patel<br> Prof. Dhara Solanki<br> Prof. Brinda Patel </td>
-                    </tr>
-                    <tr>
-                        <td>CEUE203</td>
-                        <td>OOP</td>
-                        <td>Object-Oriented Programming</td>
-                        <td> Prof. Amit Thakkar<br> Prof. Siddharth Shah </td>
-                    </tr>
-                    <tr>
-                        <td>MSUD203</td>
-                        <td>DM</td>
-                        <td>Discrete Mathematics</td>
-                        <td> Prof. Pragnesh Makwana </td>
-                    </tr>
-                    <tr>
-                        <td>HSUV201</td>
-                        <td>HS</td>
-                        <td>Creativity, Problem Solving and Innovation</td>
-                        <td> Prof. Akshita Kadamn</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-    <footer>
-        <p>
-            © 2026 StudentHub Portal |
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Terms &amp; Conditions</a>
-        </p>
-    </footer>
-</body>
+</aside>
+   <section class="content-panel portal-content">
+    <h2>
+     Weekly Time Table
+    </h2>
+    <p>
+     Academic Year :
+     <strong>
+      2026-27
+     </strong>
+     |
+                Semester :
+     <strong>
+      3
+     </strong>
+     |
+                Division :
+     <strong>
+      I
+     </strong>
+    </p>
+    <div class="table-wrapper">
+     <table>
+      <thead>
+       <tr>
+        <th scope="col">
+         Day
+        </th>
+        <th scope="col">
+         9:10
+         <br/>
+         10:10
+        </th>
+        <th scope="col">
+         10:10
+         <br/>
+         11:10
+        </th>
+        <th scope="col">
+         11:10
+         <br/>
+         12:10
+        </th>
+        <th scope="col">
+         12:10
+         <br/>
+         1:10
+        </th>
+        <th scope="col">
+         1:10
+         <br/>
+         2:10
+        </th>
+        <th scope="col">
+         2:10
+         <br/>
+         2:20
+        </th>
+        <th scope="col">
+         2:20
+         <br/>
+         3:20
+        </th>
+        <th scope="col">
+         3:20
+         <br/>
+         4:20
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <strong>
+          Monday
+         </strong>
+        </td>
+        <td>
+         CSUC201
+         <br/>
+         FDSA
+        </td>
+        <td>
+         ITUC201
+         <br/>
+         FCN
+        </td>
+        <td align="center" rowspan="6">
+         L
+         <br/>
+         U
+         <br/>
+         N
+         <br/>
+         C
+         <br/>
+         H
+         <br/>
+         <br/>
+         B
+         <br/>
+         R
+         <br/>
+         E
+         <br/>
+         A
+         <br/>
+         K
+        </td>
+        <td align="center" colspan="2">
+         HSUV201
+         <br/>
+         HS
+        </td>
+        <td align="center" rowspan="6">
+         S
+         <br/>
+         H
+         <br/>
+         O
+         <br/>
+         R
+         <br/>
+         T
+         <br/>
+         <br/>
+         B
+         <br/>
+         R
+         <br/>
+         E
+         <br/>
+         A
+         <br/>
+         K
+        </td>
+        <td align="center" colspan="2">
+         Laboratory Session
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Tuesday
+         </strong>
+        </td>
+        <td>
+         MSUD203
+         <br/>
+         Maths
+        </td>
+        <td>
+         CSUC201
+         <br/>
+         FDSA
+        </td>
+        <td align="center" colspan="2">
+         Laboratory Session
+        </td>
+        <td>
+         ITUC201
+         <br/>
+         FCN
+        </td>
+        <td>
+         ITUE204
+         <br/>
+         WDF
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Wednesday
+         </strong>
+        </td>
+        <td>
+         MSUD203
+         <br/>
+         Maths
+        </td>
+        <td>
+         CEUE203
+         <br/>
+         OOP
+        </td>
+        <td align="center" colspan="2">
+         Laboratory Session
+        </td>
+        <td>
+         ITUE204
+         <br/>
+         WDF
+        </td>
+        <td>
+         CSUC201
+         <br/>
+         FDSA
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Thursday
+         </strong>
+        </td>
+        <td>
+         ITUE204
+         <br/>
+         WDF
+        </td>
+        <td>
+         ITUC201
+         <br/>
+         FCN
+        </td>
+        <td align="center" colspan="2">
+         Laboratory Session
+        </td>
+        <td align="center" colspan="2">
+         Laboratory Session
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Friday
+         </strong>
+        </td>
+        <td>
+         MSUD203
+         <br/>
+         Maths
+        </td>
+        <td>
+         CSUC201
+         <br/>
+         FDSA
+        </td>
+        <td align="center" colspan="2">
+         Counselling Session
+        </td>
+        <td>
+         ITUC201
+         <br/>
+         FCN
+        </td>
+        <td>
+         CEUE203
+         <br/>
+         OOP
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Saturday
+         </strong>
+        </td>
+        <td align="center">
+         -
+        </td>
+        <td align="center">
+         -
+        </td>
+        <td align="center" colspan="2">
+         -
+        </td>
+        <td align="center">
+         -
+        </td>
+        <td align="center">
+         -
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <br/>
+    <h2>
+     Course Information
+    </h2>
+    <div class="table-wrapper">
+     <table>
+      <thead>
+       <tr>
+        <th scope="col">
+         Course Code
+        </th>
+        <th scope="col">
+         Course Name (Short Name)
+        </th>
+        <th scope="col">
+         Course Name
+        </th>
+        <th scope="col">
+         Name of Faculty Member(s)
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         CSUC201
+        </td>
+        <td>
+         FDSA
+        </td>
+        <td>
+         Fundamentals of Data Structure and Algorithm
+        </td>
+        <td>
+         Prof. Avani Khokhariya
+         <br/>
+         Prof. Gayatri Parbat
+         <br/>
+         Prof. Vidisha Pradhan
+        </td>
+       </tr>
+       <tr>
+        <td>
+         ITUC201
+        </td>
+        <td>
+         FCN
+        </td>
+        <td>
+         Fundamentals of Computer Networks
+        </td>
+        <td>
+         Prof. Harshul Yagnik
+         <br/>
+         Prof. Brinda Patel
+         <br/>
+         Prof. Akshita Kadam
+        </td>
+       </tr>
+       <tr>
+        <td>
+         ITUE204
+        </td>
+        <td>
+         WDF
+        </td>
+        <td>
+         Web Development Frameworks
+        </td>
+        <td>
+         Prof. Vaibhavi Patel
+         <br/>
+         Prof. Dhara Solanki
+         <br/>
+         Prof. Brinda Patel
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CEUE203
+        </td>
+        <td>
+         OOP
+        </td>
+        <td>
+         Object-Oriented Programming
+        </td>
+        <td>
+         Prof. Amit Thakkar
+         <br/>
+         Prof. Siddharth Shah
+        </td>
+       </tr>
+       <tr>
+        <td>
+         MSUD203
+        </td>
+        <td>
+         DM
+        </td>
+        <td>
+         Discrete Mathematics
+        </td>
+        <td>
+         Prof. Pragnesh Makwana
+        </td>
+       </tr>
+       <tr>
+        <td>
+         HSUV201
+        </td>
+        <td>
+         HS
+        </td>
+        <td>
+         Creativity, Problem Solving and Innovation
+        </td>
+        <td>
+         Prof. Akshita Kadamn
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+   <p>
+    © 2026 StudentHub Portal |
+    <a href="index.html#privacy">
+     Privacy Policy
+    </a>
+    |
+    <a href="index.html#terms">
+     Terms &amp; Conditions
+    </a>
+   </p>
+  </footer>
+ </body>
 </html>
