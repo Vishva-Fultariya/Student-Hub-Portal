@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-10-10",
+    "location": "CSE Lab 1",
+    "organizer": "CSE Department",
+    "description": "Hands-on workshop covering modern web development technologies."
+  },
+  {
+    "id": 2,
+    "title": "CodeSprint Programming Contest",
+    "category": "Competition",
+    "date": "2026-10-15",
+    "location": "Programming Lab",
+    "organizer": "Coding Club",
+    "description": "Competitive programming contest for students."
+  },
+  {
+    "id": 3,
+    "title": "AI and Machine Learning Seminar",
+    "category": "Seminar",
+    "date": "2026-10-18",
+    "location": "Seminar Hall",
+    "organizer": "CSE Department",
+    "description": "Introduction to artificial intelligence and machine learning."
+  },
+  {
+    "id": 4,
+    "title": "Cyber Security Awareness Program",
+    "category": "Seminar",
+    "date": "2026-10-22",
+    "location": "Auditorium",
+    "organizer": "Cyber Security Club",
+    "description": "Awareness session about cybersecurity and safe online practices."
+  },
+  {
+    "id": 5,
+    "title": "Tech Innovation Hackathon",
+    "category": "Hackathon",
+    "date": "2026-10-25",
+    "location": "Innovation Center",
+    "organizer": "Innovation Cell",
+    "description": "Build innovative technology solutions within a limited time."
+  },
+  {
+    "id": 6,
+    "title": "Database Design Workshop",
+    "category": "Workshop",
+    "date": "2026-10-28",
+    "location": "CSE Lab 2",
+    "organizer": "CSE Department",
+    "description": "Learn database design, normalization, and SQL fundamentals."
+  },
+  {
+    "id": 7,
+    "title": "Java Programming Seminar",
+    "category": "Seminar",
+    "date": "2026-11-02",
+    "location": "Room 204",
+    "organizer": "Programming Club",
+    "description": "Seminar covering object-oriented programming using Java."
+  },
+  {
+    "id": 8,
+    "title": "UI/UX Design Challenge",
+    "category": "Competition",
+    "date": "2026-11-05",
+    "location": "Design Lab",
+    "organizer": "Design Club",
+    "description": "Design challenge focused on user interface and user experience."
+  },
+  {
+    "id": 9,
+    "title": "IoT Innovation Workshop",
+    "category": "Workshop",
+    "date": "2026-11-08",
+    "location": "IoT Lab",
+    "organizer": "Electronics Club",
+    "description": "Practical introduction to Internet of Things technologies."
+  },
+  {
+    "id": 10,
+    "title": "Cloud Computing Talk",
+    "category": "Seminar",
+    "date": "2026-11-12",
+    "location": "Seminar Hall",
+    "organizer": "CSE Department",
+    "description": "Overview of cloud computing concepts and applications."
+  },
+  {
+    "id": 11,
+    "title": "Open Source Contribution Day",
+    "category": "Community",
+    "date": "2026-11-15",
+    "location": "Computer Center",
+    "organizer": "Open Source Club",
+    "description": "Learn how to contribute to open source software projects."
+  },
+  {
+    "id": 12,
+    "title": "Data Structures Coding Contest",
+    "category": "Competition",
+    "date": "2026-11-18",
+    "location": "Programming Lab",
+    "organizer": "Coding Club",
+    "description": "Coding contest focused on data structures and algorithms."
+  },
+  {
+    "id": 13,
+    "title": "Git and GitHub Workshop",
+    "category": "Workshop",
+    "date": "2026-11-21",
+    "location": "CSE Lab 1",
+    "organizer": "Developer Club",
+    "description": "Learn version control and collaborative development using GitHub."
+  },
+  {
+    "id": 14,
+    "title": "Entrepreneurship Meet",
+    "category": "Community",
+    "date": "2026-11-24",
+    "location": "Innovation Center",
+    "organizer": "Entrepreneurship Cell",
+    "description": "Interactive session about startups and entrepreneurship."
+  },
+  {
+    "id": 15,
+    "title": "Python Programming Workshop",
+    "category": "Workshop",
+    "date": "2026-11-27",
+    "location": "Programming Lab",
+    "organizer": "Programming Club",
+    "description": "Beginner-friendly workshop covering Python programming."
+  },
+  {
+    "id": 16,
+    "title": "Robotics Demonstration",
+    "category": "Exhibition",
+    "date": "2026-11-30",
+    "location": "Main Auditorium",
+    "organizer": "Robotics Club",
+    "description": "Demonstration of student-built robotics projects."
+  },
+  {
+    "id": 17,
+    "title": "Software Engineering Guest Lecture",
+    "category": "Lecture",
+    "date": "2026-12-03",
+    "location": "Room 301",
+    "organizer": "CSE Department",
+    "description": "Guest lecture about professional software engineering practices."
+  },
+  {
+    "id": 18,
+    "title": "Mobile App Development Hackathon",
+    "category": "Hackathon",
+    "date": "2026-12-06",
+    "location": "Innovation Center",
+    "organizer": "Developer Club",
+    "description": "Hackathon focused on developing innovative mobile applications."
+  },
+  {
+    "id": 19,
+    "title": "Career Guidance Session",
+    "category": "Guidance",
+    "date": "2026-12-10",
+    "location": "Auditorium",
+    "organizer": "Training and Placement Cell",
+    "description": "Career guidance session covering internships and placement preparation."
+  },
+  {
+    "id": 20,
+    "title": "Project Showcase 2026",
+    "category": "Exhibition",
+    "date": "2026-12-15",
+    "location": "Exhibition Hall",
+    "organizer": "Innovation Cell",
+    "description": "Students present their academic and technology projects."
+  }
+]

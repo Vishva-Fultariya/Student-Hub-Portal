@@ -1,173 +1,464 @@
+
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="StudentHub Portal" name="description"/>
-  <meta content="Vishva" name="author"/>
-  <title>
-   Home | StudentHub Portal
-  </title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StudentHub Portal - Empowering Students Through Technology" />
+  <meta name="author" content="Vishva" />
+
+  <title>Home | StudentHub Portal</title>
+
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <!-- Tailwind -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  />
+
+  <!-- Tailwind configuration must come before Tailwind CDN -->
   <script>
-    tailwind.config = {
+    tailwind = {
+      config: {
         corePlugins: {
-            preflight: false
+          preflight: false
         }
+      }
     };
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
-    <!-- StudentHub CSS -->
-    <link href="css/style.css" rel="stylesheet"/>
- </head>
- <body>
-  <!-- Header -->
-  <header>
-   <!-- Image -->
-   <img alt="StudentHub Portal Logo" src="images/logo.png" width="80"/>
-   <h1>
-    StudentHub Portal
-   </h1>
-   <p>
-    <strong>
-     Empowering Students Through Technology
-    </strong>
-   </p>
+
+  <!-- StudentHub CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- StudentHub JavaScript -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <img
+      src="images/logo.png"
+      alt="StudentHub Portal Logo"
+      width="80"
+      height="80"
+    />
+
+    <div class="header-text">
+      <h1>StudentHub Portal</h1>
+      <p><strong>Empowering Students Through Technology</strong></p>
+    </div>
   </header>
-  <!-- Navigation -->
-  <nav aria-label="Primary Navigation" class="public-nav">
-   <a href="index.html">
-    Home
-   </a>
-   <a href="about.html">
-    About Us
-   </a>
-   <a href="contact.html">
-    Contact
-   </a>
-   <a href="login.html">
-    Login
-   </a>
-   <a href="signup.html">
-    Sign Up
-   </a>
+
+
+  <!-- ================= NAVIGATION ================= -->
+  <nav class="public-nav" aria-label="Primary Navigation">
+
+    <!-- Hamburger menu button -->
+    <button
+      type="button"
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-controls="primaryNavLinks"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation links -->
+    <div class="nav-links" id="primaryNavLinks">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+
+    <!-- Light/Dark theme switcher -->
+    <button
+      type="button"
+      class="theme-toggle"
+      id="themeToggle"
+      aria-label="Switch to dark theme"
+      aria-pressed="false"
+    >
+      <span id="themeIcon" aria-hidden="true">🌙</span>
+      <span id="themeLabel">Dark Mode</span>
+    </button>
+
   </nav>
-  <!-- Main -->
+
+
+  <!-- ================= MAIN CONTENT ================= -->
   <main>
-   <section class="public-section hero">
-    <div class="hero-content">
-     <h2>Welcome to StudentHub Portal</h2>
-     <p>StudentHub Portal is a centralized platform designed to help students access study materials, class schedules, attendance, results, and important academic notices from one place.</p>
-     <div class="button-row">
-      <a class="button" href="signup.html">Get Started</a>
-      <a class="button secondary" href="about.html">Learn More</a>
-     </div>
+
+    <!-- Practical 4: Notification Banner -->
+    <section
+      class="notification-banner"
+      id="notificationBanner"
+      aria-label="Student announcement"
+    >
+      <p>
+        <strong>Announcement:</strong>
+        Stay updated with the latest StudentHub campus events!
+      </p>
+
+      <button
+        type="button"
+        id="dismissNotification"
+        class="notification-close"
+        aria-label="Dismiss announcement"
+      >
+        &times;
+      </button>
+    </section>
+
+    <!-- Button to demonstrate showing the notification again -->
+    <div class="notification-reopen-wrapper" id="notificationReopenWrapper" hidden>
+      <button
+        type="button"
+        class="button secondary"
+        id="showNotification"
+      >
+        Show Announcement
+      </button>
     </div>
-    <div class="hero-visual">
-     <img alt="Students using digital learning tools" class="hero-image" src="images/home-banner.png" width="700" height="450"/>
-    </div>
-   </section>
-   <section>
-    <h2>
-     Why Choose StudentHub?
-    </h2>
-    <div class="card-grid">
-     <article class="card">
-      <h3>
-       Secure Portal
-      </h3>
-      <p>
-       Safe and secure access to academic information.
-      </p>
-     </article>
-     <article class="card">
-      <h3>
-       Easy Access
-      </h3>
-      <p>
-       Quickly access attendance, timetable, results and notices.
-      </p>
-     </article>
-     <article class="card">
-      <h3>
-       Student-Centered Services
-      </h3>
-      <p>
-       All important student services are available in one place.
-      </p>
-     </article>
-    </div>
-   </section>
-   <section>
-    <h2>
-     Portal Features
-    </h2>
-    <div class="card-grid">
-     <article class="card">
-      <h3>
-       Study Material
-      </h3>
-      <p>
-       Access learning resources anytime.
-      </p>
-     </article>
-     <article class="card">
-      <h3>
-       Timetable
-      </h3>
-      <p>
-       View weekly class schedule.
-      </p>
-     </article>
-     <article class="card">
-      <h3>
-       Attendance
-      </h3>
-      <p>
-       Track attendance records.
-      </p>
-     </article>
-     <article class="card">
-      <h3>
-       Result
-      </h3>
-      <p>
-       Check semester performance.
-      </p>
-     </article>
-     <article class="card">
-      <h3>
-       Notice Board
-      </h3>
-      <p>
-       Read the latest announcements.
-      </p>
-     </article>
-     <article class="card">
-      <h3>
-       Profile
-      </h3>
-      <p>
-       Manage your personal information.
-      </p>
-     </article>
-    </div>
-   </section>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="public-section hero">
+
+      <div class="hero-content">
+        <h2>Welcome to StudentHub Portal</h2>
+
+        <p>
+          StudentHub Portal is a centralized platform designed to help
+          students access study materials, class schedules, attendance,
+          results, and important academic notices from one place.
+        </p>
+
+        <div class="button-row">
+          <a class="button" href="signup.html">Get Started</a>
+
+          <button
+            type="button"
+            class="button secondary"
+            id="openModal"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="images/home-banner.png"
+          alt="Students using digital learning tools"
+          class="hero-image"
+          width="700"
+          height="450"
+        />
+      </div>
+
+    </section>
+
+
+    <!-- ================= PRACTICAL 4: EVENT SLIDER ================= -->
+    <section
+      class="events-slider-section"
+      id="eventsSliderSection"
+      aria-labelledby="eventsHeading"
+    >
+
+      <div class="section-heading">
+        <p class="section-label">What's Happening</p>
+
+        <h2 id="eventsHeading">Discover Campus Events</h2>
+
+        <p>
+          Explore opportunities to learn, connect, and participate.
+        </p>
+      </div>
+
+      <div class="event-slider" id="eventSlider">
+
+        <div
+          class="event-slide"
+          id="eventSlide"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <p class="event-category" id="eventCategory">
+            Upcoming Event
+          </p>
+
+          <h3 id="eventTitle">Tech Fest 2026</h3>
+
+          <p id="eventDescription">
+            Explore technology, creativity, and student innovation.
+          </p>
+        </div>
+
+        <div class="slider-controls">
+
+          <button
+            type="button"
+            class="slider-button"
+            id="prevEvent"
+            aria-label="Previous event"
+          >
+            &larr; Previous
+          </button>
+
+          <span id="slideIndicator" aria-label="Current slide">
+            1 / 3
+          </span>
+
+          <button
+            type="button"
+            class="slider-button"
+            id="nextEvent"
+            aria-label="Next event"
+          >
+            Next &rarr;
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= WHY CHOOSE STUDENTHUB ================= -->
+    <section class="public-section">
+      <h2>Why Choose StudentHub?</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Secure Portal</h3>
+          <p>Safe and secure access to academic information.</p>
+        </article>
+
+        <article class="card">
+          <h3>Easy Access</h3>
+          <p>Quickly access attendance, timetable, results and notices.</p>
+        </article>
+
+        <article class="card">
+          <h3>Student-Centered Services</h3>
+          <p>All important student services are available in one place.</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PORTAL FEATURES ================= -->
+    <section class="public-section">
+      <h2>Portal Features</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <h3>Study Material</h3>
+          <p>Access learning resources anytime.</p>
+        </article>
+
+        <article class="card">
+          <h3>Timetable</h3>
+          <p>View weekly class schedule.</p>
+        </article>
+
+        <article class="card">
+          <h3>Attendance</h3>
+          <p>Track attendance records.</p>
+        </article>
+
+        <article class="card">
+          <h3>Result</h3>
+          <p>Check semester performance.</p>
+        </article>
+
+        <article class="card">
+          <h3>Notice Board</h3>
+          <p>Read the latest announcements.</p>
+        </article>
+
+        <article class="card">
+          <h3>Profile</h3>
+          <p>Manage your personal information.</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PRACTICAL 4: FAQ ================= -->
+    <section
+      class="faq-section"
+      id="faq"
+      aria-labelledby="faqHeading"
+    >
+
+      <div class="section-heading">
+        <p class="section-label">Need Help?</p>
+
+        <h2 id="faqHeading">Frequently Asked Questions</h2>
+
+        <p>Find answers to common StudentHub questions.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <article class="faq-item">
+          <h3>
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faqAnswer1"
+              id="faqQuestion1"
+            >
+              <span>What is StudentHub?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+
+          <div
+            class="faq-answer"
+            id="faqAnswer1"
+            role="region"
+            aria-labelledby="faqQuestion1"
+            hidden
+          >
+            <p>
+              StudentHub is a student portal designed to bring campus
+              information, events, and student resources together
+              in one place.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="faq-item">
+          <h3>
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faqAnswer2"
+              id="faqQuestion2"
+            >
+              <span>How can I find campus events?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+
+          <div
+            class="faq-answer"
+            id="faqAnswer2"
+            role="region"
+            aria-labelledby="faqQuestion2"
+            hidden
+          >
+            <p>
+              Browse the featured events on the home page to discover
+              activities and opportunities.
+            </p>
+          </div>
+        </article>
+
+
+        <article class="faq-item">
+          <h3>
+            <button
+              type="button"
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faqAnswer3"
+              id="faqQuestion3"
+            >
+              <span>How do I contact StudentHub?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+          </h3>
+
+          <div
+            class="faq-answer"
+            id="faqAnswer3"
+            role="region"
+            aria-labelledby="faqQuestion3"
+            hidden
+          >
+            <p>
+              Visit the Contact page using the existing StudentHub
+              navigation.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
   </main>
-  <!-- Footer -->
-  <footer>
-   <p>
-    © 2026 StudentHub Portal |
-    <a href="index.html#privacy">
-     Privacy Policy
-    </a>
-    |
-    <a href="index.html#terms">
-     Terms &amp; Conditions
-    </a>
-   </p>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <p>
+      &copy; 2026 StudentHub Portal |
+      <a href="index.html#privacy">Privacy Policy</a> |
+      <a href="index.html#terms">Terms &amp; Conditions</a>
+    </p>
   </footer>
- </body>
+
+
+  <!-- ================= PRACTICAL 4: MODAL ================= -->
+  <dialog
+    class="studenthub-modal"
+    id="studentHubModal"
+    aria-labelledby="modalTitle"
+    aria-describedby="modalDescription"
+  >
+
+    <div class="modal-content">
+
+      <button
+        type="button"
+        class="modal-close"
+        id="closeModal"
+        aria-label="Close dialog"
+      >
+        &times;
+      </button>
+
+      <p class="section-label">Welcome to StudentHub</p>
+
+      <h2 id="modalTitle">Hello, Student!</h2>
+
+      <p id="modalDescription">
+        StudentHub Portal is your gateway to a world of academic resources,
+        campus events, and student services. Explore the portal to stay
+        informed and connected with your campus community.
+      </p>
+
+      <button
+        type="button"
+        class="button modal-primary"
+        id="modalDone"
+      >
+        Got it
+      </button>
+
+    </div>
+
+  </dialog>
+
+</body>
 </html>

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "email": "aarav.patel@example.com",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "department": "Computer Science",
+    "city": "Ahmedabad",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Diya Shah",
+    "email": "diya.shah@example.com",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "department": "Computer Science",
+    "city": "Vadodara",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Mehta",
+    "email": "rohan.mehta@example.com",
+    "course": "B.Tech IT",
+    "semester": 5,
+    "department": "Information Technology",
+    "city": "Surat",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "Ananya Desai",
+    "email": "ananya.desai@example.com",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "department": "Computer Science",
+    "city": "Rajkot",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "Kunal Joshi",
+    "email": "kunal.joshi@example.com",
+    "course": "B.Tech CE",
+    "semester": 3,
+    "department": "Computer Engineering",
+    "city": "Anand",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Meera Trivedi",
+    "email": "meera.trivedi@example.com",
+    "course": "B.Tech CSE",
+    "semester": 7,
+    "department": "Computer Science",
+    "city": "Nadiad",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "name": "Dev Malhotra",
+    "email": "dev.malhotra@example.com",
+    "course": "B.Tech IT",
+    "semester": 5,
+    "department": "Information Technology",
+    "city": "Ahmedabad",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "name": "Isha Patel",
+    "email": "isha.patel@example.com",
+    "course": "B.Tech CE",
+    "semester": 3,
+    "department": "Computer Engineering",
+    "city": "Vadodara",
+    "status": "Inactive"
+  },
+  {
+    "id": 9,
+    "name": "Yash Shah",
+    "email": "yash.shah@example.com",
+    "course": "B.Tech CSE",
+    "semester": 5,
+    "department": "Computer Science",
+    "city": "Surat",
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "name": "Kavya Mehta",
+    "email": "kavya.mehta@example.com",
+    "course": "B.Tech IT",
+    "semester": 1,
+    "department": "Information Technology",
+    "city": "Rajkot",
+    "status": "Active"
+  },
+  {
+    "id": 11,
+    "name": "Harsh Vora",
+    "email": "harsh.vora@example.com",
+    "course": "B.Tech CSE",
+    "semester": 7,
+    "department": "Computer Science",
+    "city": "Anand",
+    "status": "Active"
+  },
+  {
+    "id": 12,
+    "name": "Nisha Shah",
+    "email": "nisha.shah@example.com",
+    "course": "B.Tech CE",
+    "semester": 5,
+    "department": "Computer Engineering",
+    "city": "Ahmedabad",
+    "status": "Active"
+  },
+  {
+    "id": 13,
+    "name": "Dhruv Patel",
+    "email": "dhruv.patel@example.com",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "department": "Computer Science",
+    "city": "Nadiad",
+    "status": "Inactive"
+  },
+  {
+    "id": 14,
+    "name": "Riya Desai",
+    "email": "riya.desai@example.com",
+    "course": "B.Tech IT",
+    "semester": 7,
+    "department": "Information Technology",
+    "city": "Vadodara",
+    "status": "Active"
+  },
+  {
+    "id": 15,
+    "name": "Manav Joshi",
+    "email": "manav.joshi@example.com",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "department": "Computer Science",
+    "city": "Surat",
+    "status": "Active"
+  },
+  {
+    "id": 16,
+    "name": "Pooja Trivedi",
+    "email": "pooja.trivedi@example.com",
+    "course": "B.Tech CE",
+    "semester": 3,
+    "department": "Computer Engineering",
+    "city": "Rajkot",
+    "status": "Active"
+  },
+  {
+    "id": 17,
+    "name": "Aditya Shah",
+    "email": "aditya.shah@example.com",
+    "course": "B.Tech CSE",
+    "semester": 5,
+    "department": "Computer Science",
+    "city": "Anand",
+    "status": "Active"
+  },
+  {
+    "id": 18,
+    "name": "Sneha Patel",
+    "email": "sneha.patel@example.com",
+    "course": "B.Tech IT",
+    "semester": 7,
+    "department": "Information Technology",
+    "city": "Nadiad",
+    "status": "Active"
+  },
+  {
+    "id": 19,
+    "name": "Rahul Vora",
+    "email": "rahul.vora@example.com",
+    "course": "B.Tech CE",
+    "semester": 5,
+    "department": "Computer Engineering",
+    "city": "Ahmedabad",
+    "status": "Inactive"
+  },
+  {
+    "id": 20,
+    "name": "Tanvi Mehta",
+    "email": "tanvi.mehta@example.com",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "department": "Computer Science",
+    "city": "Vadodara",
+    "status": "Active"
+  }
+]

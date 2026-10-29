@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What is the Fetch API?",
+    "answer": "The Fetch API is a modern JavaScript interface used to make HTTP requests and retrieve resources such as JSON data.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 2,
+    "question": "What is JSON?",
+    "answer": "JSON is a lightweight text-based data format commonly used for storing and exchanging structured data.",
+    "category": "JSON"
+  },
+  {
+    "id": 3,
+    "question": "What does response.json() do?",
+    "answer": "The response.json() method reads the response body and parses it as JSON.",
+    "category": "Fetch API"
+  },
+  {
+    "id": 4,
+    "question": "What is dynamic rendering?",
+    "answer": "Dynamic rendering means generating and updating webpage content using data and JavaScript instead of writing every item manually in HTML.",
+    "category": "Web Development"
+  },
+  {
+    "id": 5,
+    "question": "What is the purpose of filter()?",
+    "answer": "The filter() method creates a new array containing elements that satisfy a specified condition.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 6,
+    "question": "What is the purpose of map()?",
+    "answer": "The map() method creates a new array by applying a function to every element of an existing array.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 7,
+    "question": "What is the purpose of sort()?",
+    "answer": "The sort() method arranges the elements of an array according to a specified sorting rule.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 8,
+    "question": "What is pagination?",
+    "answer": "Pagination divides a large collection of records into smaller pages so users can view a limited number of records at a time.",
+    "category": "UI"
+  },
+  {
+    "id": 9,
+    "question": "Why is pagination useful?",
+    "answer": "Pagination improves readability and makes large datasets easier to browse and navigate.",
+    "category": "UI"
+  },
+  {
+    "id": 10,
+    "question": "What is a loading state?",
+    "answer": "A loading state informs users that data is currently being retrieved or processed.",
+    "category": "UI"
+  },
+  {
+    "id": 11,
+    "question": "Why is error handling important?",
+    "answer": "Error handling provides useful feedback when a network request fails or the requested data cannot be processed.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 12,
+    "question": "What is modular JavaScript?",
+    "answer": "Modular JavaScript divides application functionality into separate reusable files or modules.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 13,
+    "question": "What is an external JSON file?",
+    "answer": "An external JSON file stores structured data separately from the webpage and can be loaded when required.",
+    "category": "JSON"
+  },
+  {
+    "id": 14,
+    "question": "Can Fetch API handle errors?",
+    "answer": "Yes. Fetch can be combined with response status checks and catch blocks to handle request and network errors.",
+    "category": "Fetch API"
+  },
+  {
+    "id": 15,
+    "question": "What is an array in JavaScript?",
+    "answer": "An array is an ordered collection that can store multiple values in a single variable.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 16,
+    "question": "What is asynchronous JavaScript?",
+    "answer": "Asynchronous JavaScript allows operations such as data fetching to occur without blocking other parts of the application.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 17,
+    "question": "What is a Promise?",
+    "answer": "A Promise represents the eventual completion or failure of an asynchronous operation.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 18,
+    "question": "Why should JSON data be validated?",
+    "answer": "Validation helps ensure that the application receives data in the expected structure and reduces rendering errors.",
+    "category": "JSON"
+  },
+  {
+    "id": 19,
+    "question": "What is client-side filtering?",
+    "answer": "Client-side filtering processes already loaded data in the browser to display only records matching selected conditions.",
+    "category": "UI"
+  },
+  {
+    "id": 20,
+    "question": "What is the advantage of reusable rendering functions?",
+    "answer": "Reusable rendering functions reduce duplicated code and make the application easier to maintain and extend.",
+    "category": "Web Development"
+  }
+]

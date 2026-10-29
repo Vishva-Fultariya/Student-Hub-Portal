@@ -1,0 +1,181 @@
+
+/* =========================================
+   WDF Practical 7
+   Student Registration Form
+   ========================================= */
+
+/* ---------- Global Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- Page ---------- */
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+
+/* ---------- Form Card ---------- */
+
+.form-card {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- Header ---------- */
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.practical-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e8f0fe;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-header h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #111827;
+}
+
+.form-description {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* ---------- Form ---------- */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+
+/* ---------- Inputs ---------- */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111827;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* ---------- Submit Button ---------- */
+
+.submit-button {
+    width: 100%;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background: #1d4ed8;
+}
+
+.submit-button:active {
+    transform: translateY(1px);
+}
+
+
+/* ---------- Mobile Responsive ---------- */
+
+@media (max-width: 600px) {
+
+    .page-container {
+        padding: 20px 12px;
+    }
+
+    .form-card {
+        padding: 25px 20px;
+    }
+
+    .form-header h1 {
+        font-size: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
